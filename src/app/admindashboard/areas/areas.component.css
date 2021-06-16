@@ -4,16 +4,16 @@
 @import "https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.css" ;
 .map-wrapper {
   position:absolute;
-  top: 0px;
+  top: 80px;
   left: 0;
   right: 0;
   bottom: 10;
-  margin:150px;
+
   height:70%;
 }
 
 .map-border {
-  border: 5px solid orange;
+  border: 1px solid orange;
   height: 100%;
 }
 

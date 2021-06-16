@@ -81,13 +81,14 @@ import { MapModule } from './dashboard/map/map.module';
 
 import { RapportModule } from './dashboard/rapport/rapport.module';
 import { EmployeesModule } from './dashboard/employees/employees.module';
-import { HomeModule } from './home/home.module';
+
 import { LoginComponent } from './login/login.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { authInterceptorProviders } from './JWT-header-HTTP/auth.interceptor';
 
 import { SubuserdashboardComponent } from './subuserdashboard/subuserdashboard.component';
+import { IonicModule } from '@ionic/angular';
 
 
 @NgModule({
@@ -165,9 +166,10 @@ import { SubuserdashboardComponent } from './subuserdashboard/subuserdashboard.c
 
     RapportModule,
     EmployeesModule,
-    HomeModule,
+
     DxValidatorModule,
-    DxValidationSummaryModule
+    DxValidationSummaryModule,
+    IonicModule.forRoot()
   ],
   providers: [authInterceptorProviders,DatePipe],
   bootstrap: [AppComponent],

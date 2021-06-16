@@ -10,7 +10,6 @@ import{SubUserGuardService} from './auth//SubUserGuard.service';
 
 const routes: Routes = [
 
-  { path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
 { path: 'resetpassword', loadChildren: () => import('./password/password.module').then(m => m.PasswordModule) },
 
 { path: 'dashboard',
@@ -34,7 +33,7 @@ children: [
 
 
 ]},
-{path:'login',component:LoginComponent},
+{path:'',component:LoginComponent},
 
 { path: 'admindashboard',
 component:AdmindashboardComponent,canActivate:[AdminGuardService],

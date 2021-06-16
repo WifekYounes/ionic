@@ -1,0 +1,7 @@
+{
+  "name": "BWS-main",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

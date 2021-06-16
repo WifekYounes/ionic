@@ -1,4 +1,4 @@
-<h4 class="display-4"  style="text-align: center;">Constraints Management</h4>
+<h4 class="display-4"  style="text-align: center;font-size: 30px;">Constraints Management</h4>
 <hr>
 <dx-button id="exportButton"
     icon="exportpdf"
@@ -14,27 +14,12 @@
 
     [rowAlternationEnabled]="true"
     [showBorders]="true"
-    (onRowInserted)="addConstraint($event)"
-    (onRowUpdated)="updateConstraint($event)"
-    (onRowRemoved)="removeConstraint($event)"
     (onExporting)="onExporting1($event)"
 
   keyExpr="idConstraint">
 
 
-    <dxo-editing
-        mode="popup"
-        [useIcons]="true"
 
-        [allowDeleting]="true"
-
-        [allowAdding]="true"
-
-        [allowUpdating]="true"
-
-        >
-
-    </dxo-editing>
     <dxo-paging [pageSize]="5"></dxo-paging>
     <dxo-export [enabled]="true"></dxo-export>
     <dxo-search-panel
@@ -53,13 +38,6 @@
     <dxi-column dataField="max_value" dataType="number">
       <dxi-validation-rule type="required"></dxi-validation-rule>
     </dxi-column>
-
-    <dxi-column type="buttons" [width]="110" caption="Actions">
-
-      <dxi-button name="edit"></dxi-button>
-      <dxi-button name="delete"></dxi-button>
-
-      </dxi-column>
 
 
 </dx-data-grid>
